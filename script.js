@@ -7,6 +7,7 @@ input.addEventListener("keydown",function(event){
        addItem();
 })
 function addItem(){
+    var i=0;
     var divParent=document.createElement("div");
     var divChild=document.createElement("div");
     var checkIcon=document.createElement("i");
@@ -16,7 +17,15 @@ function addItem(){
     checkIcon.className="fas fa-check-square";
     checkIcon.style.color="lightgray";
     checkIcon.addEventListener("click",function(){
-        checkIcon.style.color="limegreen";
+        if(i%2==0){
+            checkIcon.style.color="limegreen";
+            i++;
+        }
+        else{
+            checkIcon.style.color="lightgray";
+            i++;
+        }
+        
     })
     divChild.appendChild(checkIcon);
     trashIcon.className="fas fa-trash";
