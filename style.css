@@ -48,7 +48,8 @@ body{
     transition: 1s;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-    padding: 8px;
+    padding: 7px;
+    font-family: inherit;
 }
 .user-input button:hover{
     background-color: transparent;
